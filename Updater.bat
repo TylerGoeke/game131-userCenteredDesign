@@ -2,7 +2,6 @@
 
 REM pulls from repository and merges with the local one being worked on
 
-REM %1 will be the branch being merged into master
+REM pulls origin to update local repository from online repository
 
-git checkout master
-git merge %1
+git pull origin
