@@ -2,4 +2,6 @@
 
 REM commits and pushes all changed files
 
-FORFILES /c "git add"
+REM FORFILES /c "git add @file"
+
+git commit -a -m "%1"
