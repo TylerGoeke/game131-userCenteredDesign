@@ -2,6 +2,5 @@
 
 REM reverts changes made
 
-REM merges current branch to the master branch
-
-git merge -Xtheirs master
+REM hard resets the current repository
+git reset --hard
