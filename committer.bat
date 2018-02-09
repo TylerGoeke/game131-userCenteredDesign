@@ -9,7 +9,11 @@ if %1=="--help" (
 	git add --all
 	git commit -m "%~1"
 	git push
+	goto :break
 )
 :helping
 echo This file commits all changes made in the current branch and pushes them to the repository
 echo An input consisting of a commit message in quotation marks (" ") is required
+
+:break
+exit /b
