@@ -3,13 +3,13 @@
 REM moves to master, adds all files to next commit, commits the files with a message, and pushes them
 
 if %1=="--help" (
-	goto :helping
+	goto helping
 ) ELSE (
 
 	git add --all
 	git commit -m "%~1"
 	git push
-	goto :break
+	goto break
 )
 :helping
 echo This file commits all changes made in the current branch and pushes them to the repository
