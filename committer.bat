@@ -3,7 +3,7 @@
 REM moves to master, adds all files to next commit, commits the files with a message, and pushes them
 
 if %1=="--help" (
-	goto helping
+	goto :helping
 ) else (
 
 git add --all
