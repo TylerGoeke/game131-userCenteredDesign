@@ -8,7 +8,9 @@ git add --all
 git commit -m "committing for update"
 git pull origin
 
-IF %1==/? (
+set checkOne=%1
+
+IF /I %checkOne%=="/?" (
 	goto help ) 
 	else (
 	goto run )
