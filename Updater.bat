@@ -10,7 +10,7 @@ git pull origin
 
 set checkOne=%1
 
-IF %checkOne%==/? GOTO help
+IF %checkOne%== /? GOTO help
 
 :run
 git add --all
