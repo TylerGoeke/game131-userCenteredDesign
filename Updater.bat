@@ -8,7 +8,6 @@ set checkOne=%1
 
 IF %checkOne%==help GOTO help
 
-:run
 git add --all
 git commit -m "committing for update"
 git pull origin	
