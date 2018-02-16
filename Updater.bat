@@ -8,7 +8,7 @@ git add --all
 git commit -m "committing for update"
 git pull origin
 
-IF %1==" /? " (
+IF %1==/? (
 	goto help ) 
 	else (
 	goto run )
