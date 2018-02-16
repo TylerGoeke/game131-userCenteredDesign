@@ -3,6 +3,7 @@
 REM pulls from repository and merges with the local one being worked on
 
 REM pulls origin to update local repository from original repository
+
 set checkOne=%1
 
 IF %checkOne%==help GOTO help
