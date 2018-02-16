@@ -10,10 +10,8 @@ git pull origin
 
 set checkOne=%1
 
-IF /I %checkOne%=="/?" (
-	goto help ) 
-	else (
-	goto run )
+IF %checkOne%==/? GOTO help
+
 :run
 git add --all
 git commit -m "committing for update"
